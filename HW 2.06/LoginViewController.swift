@@ -17,12 +17,20 @@ final class LoginViewController: UIViewController {
     private let userName = "1"
     private let userPassword = "1"
     
-    
+    // MARK: Screen Transitions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
         welcomeVC.userName = "Welcome, \(userNameTF.text ?? "")!"
     }
     
+    @IBAction func unwindSegueToLoginVC(segue: UIStoryboardSegue) {
+        guard segue.identifier == "unwindSegue" else { return }
+        
+        userNameTF.text = ""
+        passwordTF.text = ""
+    }
+    
+    // MARK: Button interactions
     @IBAction func logInTapped() {
         guard let name = userNameTF.text, let password = passwordTF.text else { return }
         
@@ -53,15 +61,8 @@ final class LoginViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindSegueToLoginVC(segue: UIStoryboardSegue) {
-        guard segue.identifier == "unwindSegue" else { return }
-        
-        userNameTF.text = ""
-        passwordTF.text = ""
-    }
-    
 }
-
+// MARK: Extension AlertController
 extension LoginViewController {
     private func showAlert(tittle: String, message: String) {
         let alert = UIAlertController(
@@ -78,7 +79,7 @@ extension LoginViewController {
         present(alert, animated: true)
     }
 }
-
+// MARK: Extension for Keyboard
 extension LoginViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
