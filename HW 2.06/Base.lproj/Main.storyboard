@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zz4-87-vQZ">
-                                <rect key="frame" x="37" y="191" width="246" height="186"/>
+                                <rect key="frame" x="37" y="161" width="246" height="186"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="SwY-W8-at9">
                                         <rect key="frame" x="0.0" y="0.0" width="246" height="140"/>
@@ -36,6 +36,7 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="419-rQ-V14">
                                                 <rect key="frame" x="0.0" y="110" width="246" height="30"/>
                                                 <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Log in">
                                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
@@ -57,24 +58,18 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Met-Ma-vCn">
                                                 <rect key="frame" x="0.0" y="0.0" width="103" height="26"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot user name?"/>
-                                                <variation key="heightClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                </variation>
                                                 <connections>
                                                     <action selector="promptButtonTapped:" destination="9GJ-OQ-fVc" eventType="touchUpInside" id="XDN-Y1-0za"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yj0-lH-cee">
                                                 <rect key="frame" x="143" y="0.0" width="103" height="26"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Forgot password?"/>
-                                                <variation key="heightClass=regular">
-                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                                </variation>
                                                 <connections>
                                                     <action selector="promptButtonTapped:" destination="9GJ-OQ-fVc" eventType="touchUpInside" id="evd-Ky-Ups"/>
                                                 </connections>
@@ -90,7 +85,7 @@
                         <constraints>
                             <constraint firstItem="Zz4-87-vQZ" firstAttribute="centerX" secondItem="bWr-0B-W5m" secondAttribute="centerX" id="5Hp-Cm-120"/>
                             <constraint firstItem="SwY-W8-at9" firstAttribute="width" secondItem="bWr-0B-W5m" secondAttribute="width" multiplier="1:1.3" id="XhL-UW-iSd"/>
-                            <constraint firstItem="Zz4-87-vQZ" firstAttribute="centerY" secondItem="bWr-0B-W5m" secondAttribute="centerY" id="zRq-91-I1J"/>
+                            <constraint firstItem="Zz4-87-vQZ" firstAttribute="centerY" secondItem="bWr-0B-W5m" secondAttribute="centerY" constant="-30" id="zRq-91-I1J"/>
                         </constraints>
                     </view>
                     <connections>
