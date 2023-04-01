@@ -18,8 +18,4 @@ final class WelcomeViewController: UIViewController {
         greetingLabel.text = userName
     }
     
-    @IBAction func logOutTapped() {
-        performSegue(withIdentifier: "unwindSegue", sender: nil)
-    }
-    
 }

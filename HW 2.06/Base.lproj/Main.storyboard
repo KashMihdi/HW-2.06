@@ -136,7 +136,6 @@
                                     <color key="titleColor" systemColor="secondarySystemBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="logOutTapped" destination="g2z-ZH-2sb" eventType="touchUpInside" id="ChU-o1-9xQ"/>
                                     <segue destination="tCG-vg-fFp" kind="unwind" identifier="unwindSegue" unwindAction="unwindSegueToLoginVCWithSegue:" id="k1u-Tr-wib"/>
                                 </connections>
                             </button>
